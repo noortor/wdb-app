@@ -7,6 +7,11 @@
       <h1>{{post.title}}</h1>
       <p>upvotes: {{post.upvotes}}</p>
       <p>downvotes: {{post.downvotes}}</p>
+      <p>{{post.content}}</p>
+      <div v-for="comment in post.comments" :key="comment">
+        <p>{{comment.author}}</p>
+        <p>{{comment.content}}</p>
+      </div>
     </div>
   </section>
 </template>
