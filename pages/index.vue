@@ -4,7 +4,7 @@
       <img src="../assets/berkeley-skyline.png" />
       <img class="ucb-logo" src="../assets/berkeley-logo (1).png" />
       <div v-for="post in posts.posts" :key="post">
-        <NuxtLink :to="{ name: 'blog-slug', params: { stuff: post} }">
+        <NuxtLink :to="{ name: 'post.id', params: { stuff: post} }">
           <div class="post-box">
             <p>Posted by {{post.author}}</p>
             <h1 class="post-title">{{post.title}}</h1>
