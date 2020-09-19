@@ -3,15 +3,6 @@
     <div>
       <img src="../assets/berkeley-skyline.png" />
       <img class="ucb-logo" src="../assets/berkeley-logo (1).png" />
-      <div v-for="post in posts.posts" :key="post">
-        <NuxtLink :to="{ name: 'blog-slug', params: { stuff: post} }">
-          <div class="post-box">
-            <p>Posted by {{post.author}}</p>
-            <h1 class="post-title">{{post.title}}</h1>
-            <p class="post-content">{{post.content}}</p>
-          </div>
-        </NuxtLink>
-      </div>
       <h1 class="title">wdb-nuxt</h1>
       <h2 class="subtitle">Nuxt.js project</h2>
       <div class="links">
@@ -66,23 +57,6 @@ export default {
 
 .links {
   padding-top: 15px;
-}
-
-.ucb-logo {
-  padding-left: 50px;
-}
-
-.post-title {
-}
-
-.post-content {
-  margin: auto;
-  width: 30%;
-}
-
-.post-box {
-  border: 4px solid blue;
-  margin-bottom: 40px;
 }
 </style>
 
